@@ -6,3 +6,4 @@ applications:
   memory: 128M
   instances: 1
   health-check-type: http
+  health-check-http-endpoint: /api/health

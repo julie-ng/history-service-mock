@@ -17,7 +17,7 @@ web.get('/api/history/random', function (req, res) {
   });
 });
 
-web.get('/api/status', function (req, res) {
+web.get('/api/health', function (req, res) {
   res.json({
     name: 'history-service',
     status: 200,
