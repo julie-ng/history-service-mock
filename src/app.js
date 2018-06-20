@@ -30,7 +30,8 @@ web.use(bodyParser.urlencoded({ extended: false }));
 
 function logRequests (req, res, next) {
   if (process.env.NODE_ENV !== 'test') {
-    console.log(`${req.method} ${req.path}`, req.body);
+    let body = req.body || '';
+    console.log(`${req.method} ${req.path}`, body);
   }
   next();
 }
