@@ -1,0 +1,8 @@
+---
+applications:
+- name: cidemo-history-service
+  buildpack: nodejs_buildpack
+  command: npm start
+  memory: 128M
+  instances: 1
+  health-check-type: http
